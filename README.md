@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mmcc007/speech.svg?branch=master&style=flat-square)](https://travis-ci.org/mmcc007/speech)
+
 # Cloud Speech Streaming gRPC Swift Sample
 
 Copied from 
