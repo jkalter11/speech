@@ -5,42 +5,42 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.002586">
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001954">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.00194">
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.001263">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: cd .. &amp;&amp; rm -rf Pods" time="0.090592">
+      <testcase classname="fastlane.lanes" name="2: cd .. &amp;&amp; rm -rf Pods" time="0.130321">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: cocoapods" time="10.349273">
+      <testcase classname="fastlane.lanes" name="3: cocoapods" time="14.846219">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: cd .. &amp;&amp; ./RUNME" time="0.100009">
+      <testcase classname="fastlane.lanes" name="4: cd .. &amp;&amp; ./RUNME" time="0.114782">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: cd .. &amp;&amp; mv Pods/BoringSSL/include/openssl/module.modulemap Pods/BoringSSL/include/openssl/BoringSSL.modulemap" time="0.01362">
+      <testcase classname="fastlane.lanes" name="5: cd .. &amp;&amp; mv Pods/BoringSSL/include/openssl/module.modulemap Pods/BoringSSL/include/openssl/BoringSSL.modulemap" time="0.016395">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: match" time="5.859605">
+      <testcase classname="fastlane.lanes" name="6: match" time="4.826615">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: gym" time="2.289648">
+      <testcase classname="fastlane.lanes" name="7: gym" time="92.086166">
         
       </testcase>
     

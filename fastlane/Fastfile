@@ -19,7 +19,7 @@ platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
     sh "cd .. && rm -rf Pods"
-    cocoapods(use_bundle_exec: false)
+    cocoapods()
     sh "cd .. && ./RUNME"
     # following line is not required when building in xCode
     sh "cd .. && mv Pods/BoringSSL/include/openssl/module.modulemap Pods/BoringSSL/include/openssl/BoringSSL.modulemap"
