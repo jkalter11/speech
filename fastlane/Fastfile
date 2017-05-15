@@ -43,7 +43,7 @@ platform :ios do
   lane :beta do
     match(
       type: "appstore",
-      git_url: 'http://' + ENV["GIT_NAME"] + ':' + ENV["GIT_PASSWORD"] + '@45.32.89.1:9090/timecar/certificates.git'
+      git_url: 'http://' + ENV["GIT_USER"] + ':' + ENV["GIT_PASSWORD"] + '@45.32.89.1:9090/timecar/certificates.git'
     ) # more information: https://codesigning.guide
     icon
     gym(scheme: "Speech")
