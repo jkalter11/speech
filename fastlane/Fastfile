@@ -19,7 +19,7 @@ platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
     sh "cd .. && rm -rf Pods"
-    cocoapods
+    cocoapods(use_bundle_exec: false)
     sh "cd .. && ./RUNME"
     # following line is not required when building in xCode
     sh "cd .. && mv Pods/BoringSSL/include/openssl/module.modulemap Pods/BoringSSL/include/openssl/BoringSSL.modulemap"
@@ -34,7 +34,10 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
-    match(type: "development") # more information: https://codesigning.guide
+    match(
+      type: "development",
+      git_url: 'http://mmccabe:' + ENV["GIT_PASSWORD"] + '@dev.timecar.co:9090/timecar/certificates.git'
+    ) # more information: https://codesigning.guide
     gym(scheme: "Speech")
     pilot
 
