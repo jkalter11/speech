@@ -1,15 +1,16 @@
 language: objective-c
 osx_image: xcode8.3
 before_install:
-- openssl aes-256-cbc -K $encrypted_2328b1623078_key -iv $encrypted_2328b1623078_iv -in id_rsa.enc -out ~\/.ssh/id_rsa -d
-- sudo gem install fastlane
+  - mkdir ~/.ssh
+  - openssl aes-256-cbc -K $encrypted_2328b1623078_key -iv $encrypted_2328b1623078_iv -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+  - sudo gem install fastlane
 before_script:
-- echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- chmod 600 ~/.ssh/id_rsa*
-- eval `ssh-agent -s`
-- ssh-add ~/.ssh/id_rsa
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - chmod 600 ~/.ssh/id_rsa*
+  - eval `ssh-agent -s`
+  - ssh-add ~/.ssh/id_rsa
 script:
-- fastlane beta
+  - fastlane beta
 env:
   global:
   - secure: tab3wPSTx4UWWx3Z0ryXS89uj4aki/as4qk/fJGukv06X1/VZ5zIxCwhngghgFdu4o7Oi2NEwC0wQcGKIzm/fvzKQjwrs2jbBg8PJdwBw49jtmbAwNh8BRCk1quca2mAqSZ/qtYgnguqEE94J/DsfRdlcQRLmX66hmQqgQuI7eANyJZkkyf28jIKxuQQde0yj+A6yIRnuT0F7zsu7CsEIGfN7LUpjPTFseMuBw5P8r+f27irik4NE2yK7MRzek6fhjwnzL6UJc/xJA3fhcLNqkzrP3peQrL7apDzQcWvoBJcQwg02HZJ+B/RXJnD7VMBouY25SDBIVtTsmM7xsJHW1pnnl5r11RUP+sXy9xuTmKMZnTo5cJp7m55xcaMSo2CnSlxct90r6WCt/6fFi1kaFNU8nSOLWr40MjoayOqnEmjjMID8HsopSpdkM0+WzIVCTY0PW4D+935VAGooBvBa/Eq9N69z+Aw1Q+PLqXNuHERB6QG7W5WpHkmj2yhBDqK904K85e7wXztgBGrvn1GaID/8p5UNYI7gfXxvOF3YFtY7O/mcPUDSAqHstin9OYasmCUSApTygkucHZHTvAv5+YKpjT9uiOgfSlnOlofJr/SGqCBIz3MhOOz0Y+d+1VJ695IeIlYuxrLMgZthKPC+n9zalO+JVffR7L5CccvakY=
