@@ -30,6 +30,11 @@ xcode-select --install
 
 # Available Actions
 ## iOS
+### ios icon
+```
+fastlane ios icon
+```
+Generate icons
 ### ios test
 ```
 fastlane ios test

@@ -4,6 +4,8 @@ Podfile.lock
 Speech.xcworkspace/
 Speech.app.dSYM.zip
 Speech.ipa
+Speech/Assets.xcassets/AppIcon.appiconset
+
 # fastlane specific
 fastlane/report.xml
 

@@ -5,42 +5,57 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001954">
+      <testcase classname="fastlane.lanes" name="00: Verifying required fastlane version" time="0.004188">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.001263">
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.00167">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: cd .. &amp;&amp; rm -rf Pods" time="0.130321">
+      <testcase classname="fastlane.lanes" name="02: cd .. &amp;&amp; rm -rf Pods" time="0.136245">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: cocoapods" time="14.846219">
+      <testcase classname="fastlane.lanes" name="03: cocoapods" time="12.829843">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: cd .. &amp;&amp; ./RUNME" time="0.114782">
+      <testcase classname="fastlane.lanes" name="04: cd .. &amp;&amp; ./RUNME" time="0.106935">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: cd .. &amp;&amp; mv Pods/BoringSSL/include/openssl/module.modulemap Pods/BoringSSL/include/openssl/BoringSSL.modulemap" time="0.016395">
+      <testcase classname="fastlane.lanes" name="05: cd .. &amp;&amp; mv Pods/BoringSSL/include/openssl/module.modulemap Pods/BoringSSL/include/openssl/BoringSSL.modulemap" time="0.012895">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: match" time="4.826615">
+      <testcase classname="fastlane.lanes" name="06: match" time="5.659266">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: gym" time="92.086166">
+      <testcase classname="fastlane.lanes" name="07: Switch to ios icon lane" time="0.012981">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: appicon" time="5.47792">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: gym" time="238.84425">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: pilot" time="714.337497">
         
       </testcase>
     

@@ -23,7 +23,14 @@ platform :ios do
     sh "cd .. && ./RUNME"
     # following line is not required when building in xCode
     sh "cd .. && mv Pods/BoringSSL/include/openssl/module.modulemap Pods/BoringSSL/include/openssl/BoringSSL.modulemap"
-    
+  end
+
+  desc "Generate icons"
+  lane :icon do
+    appicon(
+      appicon_devices: [:ipad, :iphone],
+      appicon_path: 'Speech/Assets.xcassets/'
+    )
   end
 
   desc "Runs all the tests"
@@ -35,9 +42,10 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     match(
-      type: "development",
-      git_url: 'http://mmccabe:' + ENV["GIT_PASSWORD"] + '@dev.timecar.co:9090/timecar/certificates.git'
+      type: "appstore",
+      git_url: 'http://' + ENV["GIT_NAME"] + ':' + ENV["GIT_PASSWORD"] + '@45.32.89.1:9090/timecar/certificates.git'
     ) # more information: https://codesigning.guide
+    icon
     gym(scheme: "Speech")
     pilot
 
